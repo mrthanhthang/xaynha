@@ -8,6 +8,11 @@ body a:hover{
 .display-none{
     display: none;
 }
+.vcenter {
+    display: inline-block;
+    vertical-align: bottom;
+    float: none;
+}
 /*======================================================================================*/
 /*==================================    Reponsive    ====================================*/
 /*======================================================================================*/
@@ -16,7 +21,7 @@ body a:hover{
 @media only screen
 and (max-device-width : 479px){
     /*==================================    Home    ========================================*/
-    .home{
+    .pagehome .home{
         padding-top: 20%;
     }
     .home .pencel img{
@@ -41,7 +46,7 @@ and (max-device-width : 479px){
 
         padding-top: 10px;
     }
-    .texthome{
+    .pagehome .texthome{
         padding-top: 10%;
         padding-left: 0px;
     }
@@ -49,15 +54,28 @@ and (max-device-width : 479px){
     .pageteam1480{
         display: block;
     }
+    .pageteam1480 div.btn-group{
+        width: 100%;
+        height: 40px;
+    }
+    .pageteam1480 .btn-menu{
+        background: url("../img/bg-menu-top.png") repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .pageteam1480 .imglogo{
+        padding-top: 6%;
+    }
+
 }
 
 /* 480 < width < 768px iphone nằm*/
 @media (min-device-width : 480px) and (max-device-width : 767px){
     /*==================================    Home    ========================================*/
-    .home{
+    .pagehome .home{
         padding-top: 10%;
     }
-    .home .pencel img{
+    .pagehome .home .pencel img{
         width: 90%;
     }
     .pagehome .home480768{
@@ -78,7 +96,7 @@ and (max-device-width : 479px){
         width: 100%;
         height: 100%;
     }
-    .texthome{
+    .pagehome .texthome{
         padding-top: 10%;
         padding-left: 0px;
     }
@@ -88,31 +106,43 @@ and (max-device-width : 479px){
     .pageteam1480768{
         display: block;
     }
+    .pageteam1480768 .imglogo{
+        padding-top: 6%;
+    }
+    .pageteam1480768 div.btn-group{
+        width: 100%;
+        height: 40px;
+    }
+    .pageteam1480768 .btn-menu{
+        background: url("../img/bg-menu-top.png") repeat;
+        width: 100%;
+        height: 100%;
+    }
 
 }
 /* 768 < width < 1024px ipad đứng*/
 @media (min-device-width : 768px) and (max-device-width : 1023px){
     /* STYLES GO HERE */
     /*==================================    Home    ========================================*/
-    .home{
+    .pagehome .home{
         padding-top: 20%;
     }
-    .home .pencel img{
+    .pagehome .home .pencel img{
         width: 100%;
     }
-    .home7681024{
+    .pagehome .home7681024{
         display: block;
     }
-    .home7681024 .logo{
+    .pagehome .home7681024 .logo{
         padding-top: 50px;
     }
-    .header div.menutop{
+    .pagehome .header div.menutop{
         padding-top: 50px;
     }
-    .home .detail7681024{
+    .pagehome .home .detail7681024{
         display: block;
     }
-    .texthome{
+    .pagehome .texthome{
         padding-top: 3%;
         padding-left: 0px;
     }
@@ -120,35 +150,85 @@ and (max-device-width : 479px){
     .pageteam17681204{
         display: block;
     }
+    .pageteam17681204 .menutop div.btn-group{
+        width: 7%;
+        height: 40px;
+    }
+    .pageteam17681204 .btn-menu{
+        position: absolute;
+        left: -18%;
+        background: url("../img/bg-menu-top.png") repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .pageteam17681204 .logo{
+        padding-top: 7%;
+    }
+    .team1{
+        padding-top: 100px;
+    }
 }
 /* width > 1024px desktop*/
 @media only screen
-and (min-device-width : 1024px){
+and (width : 1024px){
     /*==================================    Home    ========================================*/
-    .home{
+    .pagehome .home{
         padding-top: 20%;
     }
-    .home .pencel img{
+    .pagehome .home .pencel img{
         width: 100%;
     }
-    .homedesktop{
+    .pagehome .homedesktop{
         display: block;
     }
-    .header div.menutop{
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-    }
-    .home .detail{
+    .pagehome .home .detail{
         display: block;
     }
-    .texthome{
+    .pagehome .texthome{
+        padding-top: 10%;
+        padding-left: 0px;
+    }
+    /*==================================    Team1    ========================================*/
+    .pageteam1eq1204{
+        display: block;
+    }
+    .pageteam1eq1204 .neq1204{
+        display: block;
+    }
+    .team1{
+        padding-top: 100px;
+    }
+}
+
+/* width > 1024px desktop*/
+@media only screen
+and (min-device-width : 1025px){
+    /*==================================    Home    ========================================*/
+    .pagehome .home{
+        padding-top: 20%;
+    }
+    .pagehome .home .pencel img{
+        width: 100%;
+    }
+    .pagehome .homedesktop{
+        display: block;
+    }
+    .pagehome .home .detail{
+        display: block;
+    }
+    .pagehome .texthome{
         padding-top: 10%;
         padding-left: 0px;
     }
     /*==================================    Team1    ========================================*/
     .pageteam11204{
         display: block;
+    }
+    .pageteam11204 .neq1204{
+        display: block;
+    }
+    .team1{
+        padding-top: 100px;
     }
 }
 
@@ -179,14 +259,15 @@ and (min-device-width : 1024px){
 /*==================================    Team 1    ========================================*/
 /*======================================================================================*/
 
-.team1 h1{
-    color: #056938;
-}
+
 .team1 strong{
     color: #10519f;
 }
-.team1{
-    padding-top: 100px;
+.namecompany{
+    font-size: 36px;
+}
+.namedomain{
+    color: #056938;
 }
 /*======================================================================================*/
 /*==================================    Team 3    ========================================*/

@@ -16,7 +16,167 @@ body a:hover{
 /*======================================================================================*/
 /*==================================    Reponsive    ====================================*/
 /*======================================================================================*/
+/* width > 1024px desktop*/
+@media only screen
+and (min-device-width : 1025px){
+    /*==================================    Home    ========================================*/
+    .pagehome .home{
+        padding-top: 20%;
+    }
+    .pagehome .home .pencel img{
+        width: 100%;
+    }
+    .pagehome .homedesktop{
+        display: block;
+    }
+    .pagehome .home .detail{
+        display: block;
+    }
+    .pagehome .texthome{
+        padding-top: 10%;
+        padding-left: 0px;
+    }
+    /*==================================    Team1    ========================================*/
+    .pageteam11204{
+        display: block;
+    }
+    .pageteam11204 .neq1204{
+        display: block;
+    }
+    .team1{
+        padding-top: 100px;
+    }
+}
+/* width = 1024px desktop*/
+@media only screen
+and (width : 1024px){
+    /*==================================    Home    ========================================*/
+    .pagehome .home{
+        padding-top: 20%;
+    }
+    .pagehome .home .pencel img{
+        width: 100%;
+    }
+    .pagehome .homedesktop{
+        display: block;
+    }
+    .pagehome .home .detail{
+        display: block;
+    }
+    .pagehome .texthome{
+        padding-top: 10%;
+        padding-left: 0px;
+    }
+    /*==================================    Team1    ========================================*/
+    .pageteam1eq1204{
+        display: block;
+    }
+    .pageteam1eq1204 .neq1204{
+        display: block;
+    }
+    .team1{
+        padding-top: 100px;
+    }
+}
+/* 768 < width < 1024px ipad đứng*/
+@media (min-device-width : 768px) and (max-device-width : 1023px){
+    /* STYLES GO HERE */
+    /*==================================    Home    ========================================*/
+    .pagehome .home{
+        padding-top: 20%;
+    }
+    .pagehome .home .pencel img{
+        width: 100%;
+    }
+    .pagehome .home7681024{
+        display: block;
+    }
+    .pagehome .home7681024 .logo{
+        padding-top: 50px;
+    }
+    .pagehome .header div.menutop{
+        padding-top: 50px;
+    }
+    .pagehome .home .detail7681024{
+        display: block;
+    }
+    .pagehome .texthome{
+        padding-top: 3%;
+        padding-left: 0px;
+    }
+    /*==================================    Team1    ========================================*/
+    .pageteam17681204{
+        display: block;
+    }
+    .pageteam17681204 .menutop div.btn-group{
+        width: 7%;
+        height: 40px;
+    }
+    .pageteam17681204 .btn-menu{
+        position: absolute;
+        left: -18%;
+        background: url("../img/bg-menu-top.png") repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .pageteam17681204 .logo{
+        padding-top: 7%;
+    }
+    .team1{
+        padding-top: 100px;
+    }
+}
+/* 480 < width < 768px iphone nằm*/
+@media (min-device-width : 480px) and (max-device-width : 767px){
+    /*==================================    Home    ========================================*/
+    .pagehome .home{
+        padding-top: 10%;
+    }
+    .pagehome .home .pencel img{
+        width: 90%;
+    }
+    .pagehome .home480768{
+        display: block;
+    }
+    .pagehome .detail480768{
+        display: block;
+    }
+    .pagehome .home480768 .imglogo{
+        margin-top: 4%;
+    }
+    .pagehome .menutop div.btn-group{
+        width: 100%;
+        height: 40px;
+    }
+    .pagehome .btn-menu{
+        background: url("../img/bg-menu-top.png") repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .pagehome .texthome{
+        padding-top: 10%;
+        padding-left: 0px;
+    }
 
+
+    /*==================================    Team1    ========================================*/
+    .pageteam1480768{
+        display: block;
+    }
+    .pageteam1480768 .imglogo{
+        padding-top: 6%;
+    }
+    .pageteam1480768 div.btn-group{
+        width: 100%;
+        height: 40px;
+    }
+    .pageteam1480768 .btn-menu{
+        background: url("../img/bg-menu-top.png") repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+}
 /* width < 480px iphone đứng*/
 @media only screen
 and (max-device-width : 479px){
@@ -69,168 +229,6 @@ and (max-device-width : 479px){
 
 }
 
-/* 480 < width < 768px iphone nằm*/
-@media (min-device-width : 480px) and (max-device-width : 767px){
-    /*==================================    Home    ========================================*/
-    .pagehome .home{
-        padding-top: 10%;
-    }
-    .pagehome .home .pencel img{
-        width: 90%;
-    }
-    .pagehome .home480768{
-        display: block;
-    }
-    .pagehome .detail480768{
-        display: block;
-    }
-    .pagehome .home480768 .imglogo{
-        margin-top: 4%;
-    }
-    .pagehome .menutop div.btn-group{
-        width: 100%;
-        height: 40px;
-    }
-    .pagehome .btn-menu{
-        background: url("../img/bg-menu-top.png") repeat;
-        width: 100%;
-        height: 100%;
-    }
-    .pagehome .texthome{
-        padding-top: 10%;
-        padding-left: 0px;
-    }
-
-
-    /*==================================    Team1    ========================================*/
-    .pageteam1480768{
-        display: block;
-    }
-    .pageteam1480768 .imglogo{
-        padding-top: 6%;
-    }
-    .pageteam1480768 div.btn-group{
-        width: 100%;
-        height: 40px;
-    }
-    .pageteam1480768 .btn-menu{
-        background: url("../img/bg-menu-top.png") repeat;
-        width: 100%;
-        height: 100%;
-    }
-
-}
-/* 768 < width < 1024px ipad đứng*/
-@media (min-device-width : 768px) and (max-device-width : 1023px){
-    /* STYLES GO HERE */
-    /*==================================    Home    ========================================*/
-    .pagehome .home{
-        padding-top: 20%;
-    }
-    .pagehome .home .pencel img{
-        width: 100%;
-    }
-    .pagehome .home7681024{
-        display: block;
-    }
-    .pagehome .home7681024 .logo{
-        padding-top: 50px;
-    }
-    .pagehome .header div.menutop{
-        padding-top: 50px;
-    }
-    .pagehome .home .detail7681024{
-        display: block;
-    }
-    .pagehome .texthome{
-        padding-top: 3%;
-        padding-left: 0px;
-    }
-    /*==================================    Team1    ========================================*/
-    .pageteam17681204{
-        display: block;
-    }
-    .pageteam17681204 .menutop div.btn-group{
-        width: 7%;
-        height: 40px;
-    }
-    .pageteam17681204 .btn-menu{
-        position: absolute;
-        left: -18%;
-        background: url("../img/bg-menu-top.png") repeat;
-        width: 100%;
-        height: 100%;
-    }
-    .pageteam17681204 .logo{
-        padding-top: 7%;
-    }
-    .team1{
-        padding-top: 100px;
-    }
-}
-/* width > 1024px desktop*/
-@media only screen
-and (width : 1024px){
-    /*==================================    Home    ========================================*/
-    .pagehome .home{
-        padding-top: 20%;
-    }
-    .pagehome .home .pencel img{
-        width: 100%;
-    }
-    .pagehome .homedesktop{
-        display: block;
-    }
-    .pagehome .home .detail{
-        display: block;
-    }
-    .pagehome .texthome{
-        padding-top: 10%;
-        padding-left: 0px;
-    }
-    /*==================================    Team1    ========================================*/
-    .pageteam1eq1204{
-        display: block;
-    }
-    .pageteam1eq1204 .neq1204{
-        display: block;
-    }
-    .team1{
-        padding-top: 100px;
-    }
-}
-
-/* width > 1024px desktop*/
-@media only screen
-and (min-device-width : 1025px){
-    /*==================================    Home    ========================================*/
-    .pagehome .home{
-        padding-top: 20%;
-    }
-    .pagehome .home .pencel img{
-        width: 100%;
-    }
-    .pagehome .homedesktop{
-        display: block;
-    }
-    .pagehome .home .detail{
-        display: block;
-    }
-    .pagehome .texthome{
-        padding-top: 10%;
-        padding-left: 0px;
-    }
-    /*==================================    Team1    ========================================*/
-    .pageteam11204{
-        display: block;
-    }
-    .pageteam11204 .neq1204{
-        display: block;
-    }
-    .team1{
-        padding-top: 100px;
-    }
-}
 
 /*======================================================================================*/
 /*==================================    Home    ========================================*/
@@ -308,6 +306,6 @@ and (min-device-width : 1025px){
 .team2header h1{
     color: #bd5946;
 }
-.team2content h1{
+.team2content h2{
     color: #bd5946;
 }

@@ -2,6 +2,9 @@
 body a{
     color: #000000;
 }
+body, html {
+    height: 100%;
+}
 body a:hover{
     text-decoration: none;
 }
@@ -12,6 +15,14 @@ body a:hover{
     display: inline-block;
     vertical-align: bottom;
     float: none;
+}
+.paddingleft-none{
+    padding-left: 0px;
+
+}
+.vertical-align-bottom{
+    display: table;
+    vertical-align: bottom;
 }
 /*======================================================================================*/
 /*==================================    Reponsive    ====================================*/
@@ -45,6 +56,27 @@ and (min-device-width : 1025px){
     }
     .team1{
         padding-top: 100px;
+
+    }
+
+    /*==================================    Team2    ========================================*/
+    .team2eq1024 .team2 p{
+        width: 80%;
+        margin: auto;
+        color: #bd5946;
+    }
+    .team2eq1024 .team2 p.line{
+    background-color: #ffffff;
+        width: 40%;
+        height: 5px;
+        margin-bottom: 15px;
+    }
+    .team2{
+        padding-top: 100px;
+    }
+    /*==================================    Team3    ========================================*/
+    .team3right{
+        padding-bottom: 18%;
     }
 }
 /* width = 1024px desktop*/
@@ -77,6 +109,37 @@ and (width : 1024px){
     .team1{
         padding-top: 100px;
     }
+    /*==================================    Team3    ========================================*/
+    .container-fluid, .team3, .team31024, .team3content, .team3left{
+        height: 100%;
+    }
+
+}
+/* css for width = 1024 and > 1024px ipad đứng*/
+@media only screen
+and (min-device-width : 1024px){
+    /*==================================    Team2    ========================================*/
+    .team21024{
+        display: block;
+    }
+    .team2{
+        padding-top: 100px;
+    }
+    /*==================================    Team3    ========================================*/
+
+    .team31024{
+        display: block;
+    }
+    .team3content{
+        padding-top: 50px;
+    }
+    .team3right{
+        padding-top: 15%;
+    }
+    .team3right p{
+        font-size: 24px;
+    }
+
 }
 /* 768 < width < 1024px ipad đứng*/
 @media (min-device-width : 768px) and (max-device-width : 1023px){
@@ -124,6 +187,32 @@ and (width : 1024px){
     }
     .team1{
         padding-top: 100px;
+    }
+    /*==================================    Team1    ========================================*/
+    .team27681024{
+         display: block;
+     }
+    .team27681024 .row2{
+       padding-top: 10%;
+    }
+    .team27681024 p{
+        width: 80%;
+        margin: auto;
+        font-size: 20px;
+    }
+    /*==================================    Team2    ========================================*/
+    .team37681024{
+        display: block;
+    }
+    .team37681024 .imggiamdoc{
+        background: url("../img/bg-team3.png") repeat;
+        height: 600px;
+    }
+    .team3right{
+        padding-top: 5%;
+    }
+    .team3right p{
+        font-size: 22px;
     }
 }
 /* 480 < width < 768px iphone nằm*/
@@ -175,6 +264,36 @@ and (width : 1024px){
         width: 100%;
         height: 100%;
     }
+    /*==================================    Team2    ========================================*/
+    .team2480768{
+        display: block;
+        padding-top: 10px;
+    }
+    .team2480768 p{
+        width: 100%;
+        font-size: 12px;
+    }
+    .team2title{
+        display: none;
+    }
+    .team2title480768{
+        display: block;
+    }
+    /*==================================    Team3    ========================================*/
+    .team37681024{
+        display: block;
+    }
+    .team37681024 .imggiamdoc{
+        background: url("../img/bg-team3.png") repeat;
+        height: 50%;
+    }
+    .team3right{
+        padding-top: 5%;
+    }
+    .team3right p{
+        font-size: 18px;
+    }
+
 
 }
 /* width < 480px iphone đứng*/
@@ -226,6 +345,45 @@ and (max-device-width : 479px){
     .pageteam1480 .imglogo{
         padding-top: 6%;
     }
+    /*==================================    Team2    ========================================*/
+    .team2480{
+        display: block;
+    }
+    .team2480 .row{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .team2title{
+        display: none;
+    }
+    .team2title480{
+        display: block;
+    }
+
+    /*==================================    Team3    ========================================*/
+    .team37681024{
+        display: block;
+    }
+    .team37681024 .imggiamdoc{
+        background: url("../img/bg-team3.png") repeat;
+        height: 50%;
+    }
+    .team3right{
+        padding-top: 5%;
+    }
+    .team3right p{
+        font-size: 16px;
+    }
+    .name320480{
+        display: block;
+    }
+    .name4801024{
+        display: none;
+    }
+
+}
+
+
 
 }
 
@@ -267,21 +425,7 @@ and (max-device-width : 479px){
 .namedomain{
     color: #056938;
 }
-/*======================================================================================*/
-/*==================================    Team 3    ========================================*/
-/*======================================================================================*/
-.team3content{
-    padding-top: 50px;
-}
-.team3right{
-    padding-top: 100px;
-}
-.team3right h2{
-    color: red;
-}
-.team3right i{
-    color: #1b75bc;
-}
+
 /*======================================================================================*/
 /*==================================    Team 2    ========================================*/
 /*======================================================================================*/
@@ -289,23 +433,16 @@ and (max-device-width : 479px){
     background: url("../img/bg-team2-header.png") repeat;
     width: 100%;
 }
-.team2{
-    padding-top: 100px;
-}
-.team2 p{
-    width: 80%;
-    margin: auto;
+.team2header, .pageteam2{
     color: #bd5946;
 }
-.team2 p.line{
-    background-color: #ffffff;
-    width: 40%;
-    height: 5px;
-    margin-bottom: 15px;
+/*======================================================================================*/
+/*==================================    Team 3    ========================================*/
+/*======================================================================================*/
+
+.color-red{
+    color: red;
 }
-.team2header h1{
-    color: #bd5946;
-}
-.team2content h2{
-    color: #bd5946;
+.team3right i{
+    color: #1b75bc;
 }

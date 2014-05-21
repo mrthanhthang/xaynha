@@ -16,32 +16,66 @@
     <!-- style css-->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        body{
-            background: url("img/bg-team3.png") repeat;
+        /* css for width = 1024 and > 1024px ipad đứng*/
+        @media only screen
+        and (min-device-width : 1024px){
+            body{
+                background: url("img/bg-team3.png") repeat;
+            }
         }
-
     </style>
 </head>
 
 <body>
-<div class="container">
+<div class="container-fluid">
     <div class="team3">
-        <div class="team3content">
-            <div class="row">
-                <div class="col-xs-5"> <img width="100%" src="img/giamdoc.png"></div>
-                <div class="col-xs-7 team3right">
-                    <h1>NGUYỄN NGỌC MINH ĐĂNG</h3>
-                    <h2>GIÁM ĐỐC </h4>
-                    <p>
-                        5 năm sau khi tốt nghiệp Đại học Kiến Trúc TP.HCM, tôi thành lập Kiến Việt A.C - Xaynhavui.vn để độc lập thực hiện đam mê về kiến trúc và xây dựng của bản thân. Vai trò của tôi là điều hành tổng thể các phần chuyên môn, nhân sự, và tài chính. Trong công việc, tôi là người đòi hỏi cao, xem trọng kỷ luật, và khá điềm tĩnh.
-                        Ngoài xây dựng, tôi còn yêu thích mô-tô phân khối lớn và chụp ảnh.
-
-                    </p>
-                    <p>
-                        <strong><i>minhdang@xaynhavui.vn</i></strong>
-                    </p>
+        <!-- Reponsive for device width sereen >= 1024px-->
+        <div class="team31024 display-none">
+            <div class="row team3content">
+                    <div class="col-xs-5 vcenter">
+                                <img width="100%" src="img/giamdoc.png">
+                    </div><!--
+                    --><div style="height: 100%" class="col-xs-7 team3right vcenter">
+                        <h1>NGUYỄN NGỌC MINH ĐĂNG</h1>
+                        <h2>GIÁM ĐỐC </h2>
+                        <br/>
+                        <p>
+                            5 năm sau khi tốt nghiệp Đại học Kiến Trúc TP.HCM, tôi thành lập Kiến Việt A.C - Xaynhavui.vn để độc lập thực hiện đam mê về kiến trúc và xây dựng của bản thân. Vai trò của tôi là điều hành tổng thể các phần chuyên môn, nhân sự, và tài chính. Trong công việc, tôi là người đòi hỏi cao, xem trọng kỷ luật, và khá điềm tĩnh.
+                            <br/><br/>Ngoài xây dựng, tôi còn yêu thích mô-tô phân khối lớn và chụp ảnh.
+                        </p>
+                        <br/>
+                        <p>
+                            <strong><i>minhdang@xaynhavui.vn</i></strong>
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <!-- Reponsive for device width sereen between 768px and 1024px + 480 and 768 + <480-->
+        <div class="team37681024 display-none">
+            <div class="team3content">
+                <div class="row imggiamdoc">
+                    <div style="height: 100%" class="vcenter"></div><!--
+                    --><div class="col-xs-6 vcenter"> <img width="100%" src="img/giamdoc.png"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 team3right">
+                        <h2 class="name4801024"><strong>NGUYỄN NGỌC MINH ĐĂNG</strong></h2>
+                        <!-- Reponsive for device width sereen <480px-->
+                        <h4 class="name320480 display-none"><strong>NGUYỄN NGỌC MINH ĐĂNG</strong></h4>
+                        <h2 class="name4801024 color-red"><strong>GIÁM ĐỐC </strong></h2>
+                        <!-- Reponsive for device width sereen <480px-->
+                        <h5 style="color: red" class="name320480 display-none"><strong> GIÁM ĐỐC</strong></h5>
+                        <p>
+                            5 năm sau khi tốt nghiệp Đại học Kiến Trúc TP.HCM, tôi thành lập Kiến Việt A.C - Xaynhavui.vn để độc lập thực hiện đam mê về kiến trúc và xây dựng của bản thân. Vai trò của tôi là điều hành tổng thể các phần chuyên môn, nhân sự, và tài chính. Trong công việc, tôi là người đòi hỏi cao, xem trọng kỷ luật, và khá điềm tĩnh.
+                            <br/>Ngoài xây dựng, tôi còn yêu thích mô-tô phân khối lớn và chụp ảnh.
+                        </p>
+                        <p>
+                            <strong><i>minhdang@xaynhavui.vn</i></strong>
+                        </p>
+                    </div>
                 </div>
             </div>
+
         </div>
 
     </div>

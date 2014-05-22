@@ -21,7 +21,7 @@ body a:hover{
 
 }
 .vertical-align-bottom{
-    display: table;
+    display: table-cell;
     vertical-align: bottom;
 }
 /*======================================================================================*/
@@ -110,9 +110,7 @@ and (width : 1024px){
         padding-top: 100px;
     }
     /*==================================    Team3    ========================================*/
-    .container-fluid, .team3, .team31024, .team3content, .team3left{
-        height: 100%;
-    }
+
 
 }
 /* css for width = 1024 and > 1024px ipad đứng*/
@@ -134,11 +132,15 @@ and (min-device-width : 1024px){
         padding-top: 50px;
     }
     .team3right{
-        padding-top: 15%;
+
     }
     .team3right p{
         font-size: 24px;
     }
+    .container-fluid, .team3, .team31024, .team3content, .team3left{
+        height: 100%;
+    }
+
 
 }
 /* 768 < width < 1024px ipad đứng*/

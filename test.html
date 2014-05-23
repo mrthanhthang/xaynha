@@ -19,6 +19,7 @@
         /* css for width = 1024 and > 1024px ipad đứng*/
         body, html {
             height: 100%;
+            position: relative;
         }
         .vcenter {
             display: inline-block;
@@ -28,16 +29,14 @@
     </style>
 </head>
 <body>
-<div class="row" style="height: 100%;position: relative">
+<div class="container">
+    <div style="height: 100px" class="row">
+              <div style="background-color: #e38d13; height: 100px; overflow: hidden" class="col-xs-2">
 
-    <div style="height:3em;border:1px solid #F00;position: absolute;bottom: 0">Small</div>
-</div>
-</div>
-<div style="height: 100%" class="row">
-        <div class="col-xs-12" style="height: 500px;width: 100%; background-color: #e1edf7; display: table-cell; vertical-align: middle">
-            <div style="background-color: #e38d13;float: none" class="col-xs-12"> noid ung</div>
-        </div>
-</div>
+                    <img width="100%; " src="img/giamdoc.png">
+                </div>
 
+    </div>
+</div>
 </body>
 </html>
